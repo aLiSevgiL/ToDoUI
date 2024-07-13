@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PostService } from '../../services/post.service';
 import { Post } from '../../model/post';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -9,7 +10,7 @@ import { CommonModule } from '@angular/common';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
   standalone: true,
-  imports:[CommonModule]
+  imports:[CommonModule,HttpClientModule]
 })
 export class PostComponent implements OnInit {
   posts: Post[] = [];
