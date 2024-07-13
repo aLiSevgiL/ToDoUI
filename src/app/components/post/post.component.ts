@@ -10,7 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
   templateUrl: './post.component.html',
   styleUrls: ['./post.component.css'],
   standalone: true,
-  imports:[CommonModule,HttpClientModule]
+  imports:[CommonModule]
 })
 export class PostComponent implements OnInit {
   posts: Post[] = [];

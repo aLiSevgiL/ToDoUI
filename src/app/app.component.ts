@@ -4,6 +4,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
 import { UserComponent } from './components/user/user.component';
 import { PostComponent } from './components/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
@@ -11,7 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  imports: [RouterOutlet, NavbarComponent, UserComponent, PostComponent,HttpClientModule]
+  imports: [RouterOutlet, NavbarComponent, UserComponent, PostComponent,HttpClientModule,CommonModule]
 })
 export class AppComponent {
   title = 'ToDoUI';
